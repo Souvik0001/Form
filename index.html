@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <span class="card">
+        <div class="card-container">
+            <h1><u>Register</u></h1>
+            <hr>
+            <form id="registrationForm" onsubmit="validateForm(event)" class="card-info">
+                <label for="name">Name:</label>
+                <input type="text" id="name"><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email"><br><br>
+
+                <label for="country">Country:</label>
+                <select id="country">
+                    <option value="" disabled selected>Select a country</option>
+                    <option value="India">India</option>
+                    <option value="USA">United States</option>
+                </select><br><br>
+                <label for="program">Program:</label>
+                <select id="prgram">
+                    <option value="" disabled selected>Select a program</option>
+                    <option value="B.Tech">B.Tech</option>
+                    <option value="BBA">BBA</option>
+                    <option value="B.Sc">B.Sc</option>
+                    <option value="MBA">MBA</option>
+                    <option value="M.Tech">M.Tech</option>
+                </select><br><br>
+
+                <label for="phone">Phone No :</label>
+                <input type="text" placeholder="Enter your Phone Number" id="phone"><br><br>
+
+                <label for="transcripts">Academic Transcripts:</label>
+                <input type="file" id="transcripts" accept=".pdf"><br><br>
+
+                <label>English Proficiency Test:</label><br>
+                <input type="radio" id="toefl" name="proficiencyTest" value="TOEFL">
+                <label for="toefl">TOEFL</label><br>
+                <input type="radio" id="ielts" name="proficiencyTest" value="IELTS">
+                <label for="ielts">IELTS</label><br>
+                <label for="toeflScore">Score:</label>
+                <input type="text" placeholder="Enter your Score" id="ToeflScore"><br><br>
+
+                <input type="checkbox" id="terms">
+                <label for="terms">I accept the terms and conditions</label><br><br>
+
+                <input type="submit" class="button" value="Submit">
+            </form>
+        </div>
+        </div>
+
+
+</body>
+
+</html>
